@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebChat</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Cabeçalho -->
+    <header>
+      <span id="sala"></span>
+      <a href="index.html" class="btn btn-danger btn-sm float-right">Sair da sala</a>
+    </header>
+    <main>
+      <!-- Lista de usuarios -->
+      <aside class="sidebar">
+        <ul id="usuarios"></ul>
+      </aside>
+      <section class="content">
+        <!-- Mensagens -->
+        <div class="mensagens"></div>
+        <!-- Formulario -->
+        <div class="footer">
+          <form id="form">
+            <div class="input-group">
+              <input id="mensagem" type="text" class="form-control" placeholder="Digite sua mensagem..." required autocomplete="off">
+              <div class="input-group-append"><button class="btn btn-success" type="submit">Enviar</button></div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/client.js"></script>
+</body>
+
+</html>
