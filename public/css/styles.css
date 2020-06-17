@@ -22,7 +22,7 @@ body,
 }
 
 header,
-.mensagens,
+#mensagens,
 .footer {
   padding: 15px;
 }
@@ -67,7 +67,7 @@ main {
   justify-content: space-between;
 }
 
-.mensagens>div {
+#mensagens>div {
   background-color: #fff;
   border-radius   : 4px;
   margin          : 0 30% 10px 0;
